@@ -4,12 +4,11 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='h-screen flex flex-col justify-center items-center'>
+        <div id='hero-section' className='h-screen flex flex-col justify-center items-center'>
             <Image
                 src={logoImg}
                 alt='Top Prospects Academy'
                 sizes="100vw"
-                // Make the image display full width
                 style={{
                     width: '80%',
                     height: 'auto',
@@ -28,7 +27,7 @@ const Hero = () => {
                 </Link>
             </div>
 
-            <p className='mx-auto mt-10 font-lead-text text-white w-[50%] justify-center text-xl md:text-xs'>"Empowering student-athletes to thrive both academically and athletically, Top Prospects Academy is where the synergy of education and sports fosters personal growth and prepares future Life Champions."</p>
+            <p className='mx-auto mt-10 font-lead-text text-white w-[75%] justify-center text-xl md:text-xs'>"Empowering student-athletes to thrive both academically and athletically, Top Prospects Academy is where the synergy of education and sports fosters personal growth and prepares future Life Champions."</p>
         </div>
     )
 }

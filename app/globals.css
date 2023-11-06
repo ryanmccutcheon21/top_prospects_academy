@@ -50,3 +50,12 @@ body {
   height: auto; /* Expand height when open */
   padding: 10px;
 }
+
+
+
+@media (max-width: 850px) and (orientation: landscape) {
+  #hero-section {
+      width: 50%; /* Adjust the width for landscape mobile views */
+      margin-bottom: 8rem;
+  }
+}
