@@ -4,16 +4,18 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div id='hero-section' className='h-screen flex flex-col justify-center items-center'>
-            <Image
-                src={logoImg}
-                alt='Top Prospects Academy'
-                sizes="100vw"
-                style={{
-                    width: '80%',
-                    height: 'auto',
-                }}
-            />
+        <div className='h-screen flex flex-col justify-center items-center pb-20'>
+            <div id='hero-section'>
+                <Image
+                    src={logoImg}
+                    alt='Top Prospects Academy'
+                    sizes="100vw"
+                    style={{
+                        width: '80%',
+                        height: 'auto',
+                    }}
+                />
+            </div>
 
             {/* Enroll - Call to Action */}
             <div className='flex justify-center'>

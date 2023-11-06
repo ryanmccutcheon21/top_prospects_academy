@@ -51,11 +51,37 @@ body {
   padding: 10px;
 }
 
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 @media (max-width: 850px) and (orientation: landscape) {
   #hero-section {
       width: 50%; /* Adjust the width for landscape mobile views */
       margin-bottom: 8rem;
+  }
+}
+
+
+@media (min-width: 200px) and (max-width: 679px) {
+  #hero-section {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+}
+
+@media (min-width: 680px) and (max-width: 998px) {
+  #hero-section {
+    width: 70%; /* Adjust the width for smaller screens */
+  }
+}
+
+@media (min-width: 999px) and (max-width: 1400px) {
+  #hero-section {
+    width: 100%; /* Adjust the width for smaller screens */
   }
 }
