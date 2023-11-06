@@ -8,10 +8,41 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        black: "#000",
+        primary1: "#ffad19",
+        white: "#fff",
+        primary2: "#c2c2c2",
+        orange: "rgba(255, 173, 25, 0.5)",
+        gainsboro: "#d9d9d9",
+        darkslategray: "#404040",
+        dimgray: {
+          "100": "#737171",
+          "200": "#505050",
+        },
+        gray: "#929292",
+      },
+      spacing: {},
+      fontFamily: {
+        "button-text": "'Open Sans'",
+        "lead-text": "Oswald",
+        "bebas-neue": "'Bebas Neue'",
+        "inter": "Inter",
+        "playfair-display": "'Playfair Display'",
+      },
+    },
+    fontSize: {
+      "5xl": "24px",
+      xs: "12px",
+      "29xl": "48px",
+      base: "16px",
+      xl: "20px",
+      lg: "18px",
+      inherit: "inherit",
+    },
+    screens: {
+      md: {
+        max: "960px",
       },
     },
   },
