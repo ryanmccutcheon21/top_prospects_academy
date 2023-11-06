@@ -38,7 +38,7 @@ const Faqs: React.FC = () => {
         <main className='min-h-screen p-5 pb-20 bg-black text-white md:text-xs'>
             <h1 className='text-[2.5rem] font-lead-text text-primary1 flex justify-center md:text-[1.75rem] mb-10'>Frequently Asked Questions</h1>
 
-            <ul className='list-none bg-darkslategray p-3 rounded-md max-w-[60%] md:max-w-[70%] mx-auto flex flex-col justify-between font-bebas-neue tracking-wider hover:cursor-pointer text-[1rem]'>
+            <ul className='list-none bg-darkslategray p-3 rounded-md max-w-[60%] md:max-w-[90%] mx-auto flex flex-col justify-between font-bebas-neue tracking-wider hover:cursor-pointer text-[1rem]'>
                 {faqStates.map((faq, index) => (
                     <div key={index} className={`my-5 faq-item ${faq.isOpen ? 'open' : ''}`}>
                         <li onClick={() => toggleFaq(index)} className={`mr-5 ${faq.isOpen ? '' : 'hover:text-primary1 transition-all'}`}>{faq.question}</li>
