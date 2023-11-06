@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='mb-20 text-center'>
+        <div className='h-screen flex flex-col justify-center items-center'>
             <div style={{ maxWidth: '50%', margin: '0 auto' }}>
                 <Image
                     src={logoImg}

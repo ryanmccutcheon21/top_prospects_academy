@@ -6,20 +6,17 @@ import { useRouter } from "next/navigation";
 
 const EnrollButton: React.FC<EnrollButtonProps> = ({ step, setStep }) => {
     const router = useRouter()
-
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false)
 
     const handleEnroll = () => {
-        // Perform the enrollment logic here, e.g., make an API request.
-
         // Assuming the enrollment is successful, show the success message and redirect.
-        setShowSuccessMessage(true);
+        setShowSuccessMessage(true)
 
         // Redirect to the home page after a delay (e.g., 3 seconds).
         setTimeout(() => {
-            router.push("/"); // Replace with your home page URL
-        }, 3000); // 3000 milliseconds (3 seconds)
-    };
+            router.push("/")
+        }, 3000)
+    }
 
     return (
         <div className="flex justify-center">
