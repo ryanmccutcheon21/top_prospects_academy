@@ -5,15 +5,16 @@ import Link from 'next/link'
 const Hero = () => {
     return (
         <div className='h-screen flex flex-col justify-center items-center'>
-            <div style={{ maxWidth: '50%', margin: '0 auto' }}>
-                <Image
-                    src={logoImg}
-                    alt='Top Prospects Academy'
-                    width={600} // Specify the width of the image
-                    height={600} // Specify the height of the image
-                    layout="responsive" // Allow the image to scale within specified dimensions
-                />
-            </div>
+            <Image
+                src={logoImg}
+                alt='Top Prospects Academy'
+                sizes="100vw"
+                // Make the image display full width
+                style={{
+                    width: '80%',
+                    height: 'auto',
+                }}
+            />
 
             {/* Enroll - Call to Action */}
             <div className='flex justify-center'>
