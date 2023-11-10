@@ -4,16 +4,12 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='h-screen flex flex-col justify-center items-center pb-20'>
+        <div className='h-screen flex flex-col justify-center items-center pb-20 hero-div'>
             <div id='hero-section'>
                 <Image
                     src={logoImg}
                     alt='Top Prospects Academy'
                     sizes="100vw"
-                    style={{
-                        width: '80%',
-                        height: 'auto',
-                    }}
                 />
             </div>
 
