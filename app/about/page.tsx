@@ -5,24 +5,24 @@ const about = () => {
     const { aboutUsParagraph, reviews, staffInfo, trainingInfo } = aboutPageTextContent
 
     return (
-        <div className='bg-black text-white p-5 font-inter pb-20'>
+        <main className='bg-black text-white p-5 font-inter pb-20'>
             {/* About Us */}
-            <section className='flex flex-col items-center'>
-                <h2 className='text-[2.5rem] font-lead-text text-primary1'>About Us</h2>
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>About Us</h2>
                 <p>{aboutUsParagraph}</p>
             </section>
 
             {/* Reviews */}
-            <section>
-                <h2 className='text-[2.5rem] font-lead-text text-primary1 flex justify-center'>Reviews</h2>
+            <section className='flex flex-col py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5 text-center'>Reviews</h2>
                 {reviews.map(review => (
-                    <p>{review}</p>
+                    <p className='py-3'>{review}</p>
                 ))}
             </section>
 
             {/* Staff Info */}
-            <section>
-                <h2 className='text-[2.5rem] font-lead-text text-primary1 flex justify-center'>Our Staff</h2>
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>Our Staff</h2>
                 {staffInfo.map((staff, index) => (
                     <div className={`flex py-10 justify-center md:justify-evenly items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                         <div className='flex flex-col items-center'>
@@ -56,8 +56,8 @@ const about = () => {
             </section>
 
             {/* Training Info */}
-            <section>
-                <h2 className='text-[2.5rem] font-lead-text text-primary1 flex justify-center'>Training Philosophy</h2>
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>Training Philosophy</h2>
                 <p>{trainingInfo.p1}</p>
                 <p>{trainingInfo.philosophy.text}</p>
                 <ul className='pl-10 py-2'>
@@ -67,7 +67,7 @@ const about = () => {
                 </ul>
                 <p>{trainingInfo.philosophy.paragraph}</p>
             </section>
-        </div>
+        </main>
     )
 }
 

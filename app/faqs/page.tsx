@@ -53,7 +53,7 @@ const Faqs: React.FC = () => {
                 <div className="flex justify-center mt-5">
                     <button
                         onClick={handleViewMore}
-                        className="text-primary1 bg-transparent border border-solid border-primary1 rounded px-3 py-1 hover:bg-primary1 hover:text-black transition-all"
+                        className="bg-primary1 font-button-text font-extrabold text-[1.5rem] rounded-lg px-10 text-black py-2 cursor-pointer hover:opacity-80"
                     >
                         View More
                     </button>

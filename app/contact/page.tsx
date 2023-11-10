@@ -52,7 +52,7 @@ const contact = () => {
 
     return (
         <div className="min-h-screen p-5 bg-black text-white">
-            <h1 className="text-[2.5rem] font-lead-text text-primary1 flex justify-center">Contact Us!</h1>
+            <h1 className="text-[2.5rem] font-lead-text text-primary1 pb-5 text-center">Contact Us!</h1>
             <form onSubmit={handleSubmit} className="space-y-4 font-bebas-neue tracking-wider bg-darkslategray p-5 rounded-md max-w-[90%]  mx-auto mt-10">
                 <div className="flex flex-col">
                     <label htmlFor="fullName">Full Name</label>

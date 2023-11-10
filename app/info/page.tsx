@@ -70,25 +70,27 @@ const info = () => {
     return (
         <main className='px-5 font-inter flex flex-col justify-center items-center bg-black text-white pb-20'>
             {/* Academy Info */}
-            <section className='flex flex-col items-center'>
-                <h2 className='text-[2.5rem] font-lead-text text-primary1'>Academy Information</h2>
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>Academy Information</h2>
                 <p>{paragraph1}</p>
                 <p>{paragraph2}</p>
                 <p>{paragraph3}</p>
+            </section>
 
-                {/* Top Prospects Building Image */}
-                <div style={{ maxWidth: '80%', margin: '0 auto', marginTop: '2rem', marginBottom: '2rem' }}>
+            {/* Top Prospects Building Image */}
+            <section className='py-5'>
+                <div style={{ maxWidth: '50%', margin: '0 auto' }}>
                     <Image
                         src={buildingImg}
                         alt='Top Prospects Practice Facility Building'
-                        height={300}
-                        width={300}
-                        layout='responsive'
+                        sizes='100vw'
                     />
                 </div>
+            </section>
 
-                {/* How it works section */}
-                <h2 className='text-[2.5rem] font-lead-text text-primary1'>{title}</h2>
+            {/* How it works section */}
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>{title}</h2>
                 <p>{p1}</p>
                 <p>
                     {p20}{' '}
@@ -98,8 +100,10 @@ const info = () => {
                     {p21}
                 </p>
                 <p>{p3}</p>
+            </section>
 
-                <h2 className='text-[2.5rem] font-lead-text text-primary1'>Academy Cost</h2>
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>Academy Cost</h2>
                 <div>
                     {renderAcademyCost(fullTimeInfo)}
                     {renderAcademyCost(partTimeInfo)}
@@ -109,15 +113,17 @@ const info = () => {
             </section>
 
             {/* School Dates */}
-            <h2 className='text-[2.5rem] font-lead-text text-primary1'>Important Dates</h2>
-            <p>OPEN HOUSE: AUG 8TH AND 9TH 7:00pm-9:00pm</p>
-            <ul className='list-none text-[1.25rem] text-center'>
-                {schoolDates.map((date, index) => (
-                    <li key={index} className='py-2'>
-                        {date}
-                    </li>
-                ))}
-            </ul>
+            <section className='flex flex-col items-center py-5'>
+                <h2 className='text-[2.5rem] font-lead-text text-primary1 pb-5'>Important Dates</h2>
+                <p>OPEN HOUSE: AUG 8TH AND 9TH 7:00pm-9:00pm</p>
+                <ul className='list-none text-[1.25rem] text-center'>
+                    {schoolDates.map((date, index) => (
+                        <li key={index} className='py-2'>
+                            {date}
+                        </li>
+                    ))}
+                </ul>
+            </section>
         </main>
     )
 }

@@ -82,6 +82,6 @@ body {
 
 @media (min-width: 999px) and (max-width: 1400px) {
   #hero-section {
-    width: 100%; /* Adjust the width for smaller screens */
+    width: 50%; /* Adjust the width for smaller screens */
   }
 }

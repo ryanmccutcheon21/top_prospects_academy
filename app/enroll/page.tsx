@@ -123,7 +123,7 @@ const enroll: React.FC = () => {
     return (
         <div className='bg-black text-white min-h-screen p-5 pb-20'>
             <ProgressBar step={step} setStep={setStep} />
-            <form className='bg-darkslategray p-5 font-bebas-neue tracking-wider rounded-md max-w-[90%] flex flex-col mx-auto mt-5' onSubmit={handleSubmit}>
+            <form className='bg-darkslategray px-5 py-10 font-bebas-neue tracking-wider rounded-md max-w-[90%] flex flex-col mx-auto mt-5' onSubmit={handleSubmit}>
                 {step === 1 && <StudentInfoForm formData={formData} handleChange={handleChange} />}
                 {step === 2 && <WaiverForm formData={formData} handleChange={handleChange} />}
                 {step === 3 && <StudentPlanForm formData={formData} handleChange={handleChange} />}

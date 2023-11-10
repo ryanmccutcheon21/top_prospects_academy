@@ -36,7 +36,7 @@ const WaiverModal = () => {
                 <ModalOverlay />
                 <ModalContent className='max-w-[50%] mx-auto bg-white text-black px-5 mt-28 py-2'>
                     <ModalHeader>Terms &amp; Conditions</ModalHeader>
-                    <ModalCloseButton className='ml-auto bg-primary1 p-2 rounded-lg hover:opacity-80' />
+                    {/* <ModalCloseButton className='ml-auto bg-primary1 p-2 rounded-lg hover:opacity-80' /> */}
                     <ModalBody
                         overflowY="auto"
                         maxHeight="60vh"

@@ -23,7 +23,7 @@ const StudentInfoForm: React.FC<StudentInfoFormProps> = ({ formData, handleChang
             </div>
             <div className='flex flex-col py-2'>
                 <label htmlFor='dob' className='mb-2'>Date of Birth</label>
-                <input className="text-black pl-2" type='date' name='dob' id='dob' value={dob} onChange={handleChange} />
+                <input className="text-black pl-2 min-w-full" type='date' name='dob' id='dob' value={dob} onChange={handleChange} />
             </div>
             <div className='flex flex-col py-2'>
                 <label className='mb-2'>Grade Level</label>
